@@ -1,0 +1,52 @@
+﻿
+@{ ViewData["Title"] = "Table"; }
+
+<div class="container-fluid">
+    <h1>Listado de Usuarios del Sistema</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Mostrar
+                <select>
+                    <option selected>10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                </select>
+                registros
+            </div>
+            <div class="col">
+                <div class="rig">
+                    Buscar: <input type="text">
+                </div>
+            </div>
+        </div>
+        <br>
+        @* tbl.append() *@
+        <table id="tbl">
+            <tr>
+                @*<th>ID <button><img src="./img/alarm.svg" alt="Look" /></button></th>*@
+
+                @* No funciona los iconos *@
+
+                <th>ID <button><i class="bi bi-arrow-down-up"></i></button></th>
+                <th>Usuario <button><i class="bi bi-arrow-down-up"></i></button></th>
+                <th>Sector <button><i class="bi bi-arrow-down-up"></i></button></th>
+                <th>Ultimo Ingreso <button><i class="bi bi-arrow-down-up"></i></button></th>
+                <th>Acción <button><i class="bi bi-arrow-down-up"></i></button></th>
+            </tr>
+        </table>
+        <br>
+        <div class="row">
+            <div class="col">
+                Mostrando del 1 al 5 de un total de 5 registros
+            </div>
+            <div class="col">
+                <button class="btn btn-light rig">Anterior</button>
+                <button class="btn btn-light rig ">1</button>
+                <button class="btn btn-light rig">Siguiente</button>
+            </div>
+        </div>
+        <button class="btn btn-info">Agregar usuario</button>
+    </div>
+</div>
