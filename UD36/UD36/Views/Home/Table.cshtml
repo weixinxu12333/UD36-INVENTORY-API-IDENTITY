@@ -24,17 +24,21 @@
         <br>
         @* tbl.append() *@
         <table id="tbl">
-            <tr>
-                @*<th>ID <button><img src="./img/alarm.svg" alt="Look" /></button></th>*@
+            <thead>
+                <tr>
+                    @*<th>ID <button><img src="./img/alarm.svg" alt="Look" /></button></th>*@
 
-                @* No funciona los iconos *@
+                    @* No funciona los iconos *@
 
-                <th>ID <button><i class="bi bi-arrow-down-up"></i></button></th>
-                <th>Usuario <button><i class="bi bi-arrow-down-up"></i></button></th>
-                <th>Sector <button><i class="bi bi-arrow-down-up"></i></button></th>
-                <th>Ultimo Ingreso <button><i class="bi bi-arrow-down-up"></i></button></th>
-                <th>Acción <button><i class="bi bi-arrow-down-up"></i></button></th>
-            </tr>
+                    <th>ID <button><i class="bi bi-arrow-down-up"></i></button></th>
+                    <th>Usuario <button><i class="bi bi-arrow-down-up"></i></button></th>
+                    <th>Sector <button><i class="bi bi-arrow-down-up"></i></button></th>
+                    <th>Ultimo Ingreso <button><i class="bi bi-arrow-down-up"></i></button></th>
+                    <th>Acción <button><i class="bi bi-arrow-down-up"></i></button></th>
+                </tr>
+            </thead>
+            <tbody id="resultados">
+            </tbody>
         </table>
         <br>
         <div class="row">
